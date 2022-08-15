@@ -1,0 +1,97 @@
+<html>
+  <head></head>
+  <body>
+    Test
+  </body>
+  <script>
+    // question 1
+    // var c = 1;
+    // function closestNumber(m, n) {
+    //   if (m % n == 0) {
+    //     return m;
+    //   }
+    //   console.log(m);
+    //   if (m > 0) {
+    //     console.log("greater");
+    //     console.log((m + c) % n == 0);
+    //     if ((m + c) % n == 0) {
+    //       console.log(c);
+    //       console.log(m + c);
+
+    //       return m + c;
+    //     } else {
+    //       c = c + 1;
+    //       closestNumber(m, n);
+    //     }
+    //   }
+    //   if (m < 0) {
+    //     console.log("less");
+    //     if ((m - c) % n == 0) {
+    //       console.log(c);
+    //       console.log(m - c);
+    //       return m - c;
+    //     } else {
+    //       c = c + 1;
+    //       closestNumber(m, n);
+    //     }
+    //   }
+    // }
+
+    // console.log(closestNumber(13, 4));
+
+    // question 2
+    function merge(s1, s2) {
+      var newString = "";
+      if (s1.length > s2.length) {
+        for (var i = 0; i < s1.length; i++) {
+          if (s1[i]) {
+            newString += s1[i];
+          }
+          if (s2[i]) {
+            newString += s2[i];
+          }
+        }
+        //console.log(newString);
+        return newString;
+      } else {
+        for (var i = 0; i < s2.length; i++) {
+          if (s1[i]) {
+            newString += s1[i];
+          }
+          if (s2[i]) {
+            newString += s2[i];
+          }
+        }
+        //console.log(newString);
+        return newString;
+      }
+    }
+
+    console.log(merge("Hello", "Bye"));
+    console.log(merge("abc", "def"));
+
+    // Question 3
+    var arr1 = [2, 2, 2, 2, 2];
+    var arr1_n = 5;
+
+    //console.log(arr1.splice(3, 1));
+    //console.log(arr1);
+
+    //var arr2 = [1, 2, 2];
+    //var arr2_n = 3;
+
+    function remove_duplicate(Arr, n) {
+      for (var i = 0; i < n; i++) {
+        if (i > 0) {
+          var x = 1;
+          if (Arr[i] == Arr[i - x]) {
+            splice(i + 1, 1);
+          }
+        }
+      }
+      console.log(arr1);
+    }
+
+    remove_duplicate(arr1, arr1_n);
+  </script>
+</html>
